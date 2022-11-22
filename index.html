@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Толстый, Лысый и Виталик</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Wet+Paint" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+body {background-image: url(background/897704.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+.testband {display: grid;
+            grid-template-rows: 50px 145px 145px 145px [cross-start] 60px [cross-end] 50px 50px 100px;
+            grid-template-columns: 266px 266px [cross-start]110px 110px 110px [cross-end] 266px;
+            }
+
+.rotate-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Изображение */
+.change-img {
+  width: 110px;
+  height: 145px;
+  position: relative;
+  perspective: 1000px;
+  /*border: 2px solid #940505; /* Рамка */
+}
+.d2 {
+    border-left: #940505 double 4px;
+    border-top: #940505 double 4px;
+    border-bottom: #940505 double 4px;
+}
+.d3 {
+    border-right: #940505 double 4px;
+    border-top: #940505 double 4px;
+    border-bottom: #940505 double 4px;
+}
+.d4 {
+    border-left: #940505 double 4px;
+    border-top: #940505 double 4px;
+    border-right: #940505 double 4px;
+}
+.d5 {
+    border-right: #940505 double 4px;
+    border-left: #940505 double 4px;
+    border-bottom: #940505 double 4px;
+}
+.change-img:hover .color{
+  transform: rotateY(180deg);
+}
+.change-img:hover .black {
+  transform: rotateY(360deg);
+}
+/* Стороны изображения */
+.color, .black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  }
+.color img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.black img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);/* Отражаем изображение по горизонтали */
+}
+.black {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.rotate-block1 {
+    grid-row: 4/3;
+    grid-column: 4/5;
+}
+.rotate-block2 {
+    grid-row: 4/3;
+    grid-column: 3/4;
+}
+.rotate-block3 {
+    grid-row: 4/3;
+    grid-column: 5/6;
+}
+.rotate-block4 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.rotate-block5 {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+.audio  {
+    grid-row: 5/6;
+    grid-column: 3/6;
+    margin-top: 1em;
+    text-align: center;
+   }
+.audio p {color: aliceblue;
+          font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+color: #940505;}
+
+.head   {
+        grid-row: 1/4;
+        grid-column: 1/3;}
+.head h1    {
+    text-align: center;
+    font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+    color: #940505;
+    }
+.head h2    {
+    text-align: center;
+    font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+    color: #940505;
+}
+
+strong {color: #940505;}
+
+.buttom a {display: block;
+          border-style: solid;
+         border-radius: 25px;
+         border-color: #940505;
+         background-color: #940505;
+         color: azure; 
+         line-height: 2em;
+         text-decoration: none;
+         font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+         width: 100px;
+        text-align: center;
+        font-size: large;}
+.buttom a:hover {background-color: azure; border-color: azure; color: #940505;}
+.buttom {margin-left: 13em;}
+
+#word   {text-shadow: .1em .1em .1em azure;}
+
+footer {
+  grid-row: 8/9;
+  grid-column: 2/7; 
+  font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #940505;
+  text-size-adjust: small;
+  }
+
+    </style>
+
+</head>
+<body>
+    <div class="testband">
+        <div class="rotate-block1">
+            <div class="change-img d1">
+              <div class="color"><a href="Oleh.html"><img src="images/OlehB.jpg" alt=""/></a></div>
+              <div class="black"><a href="Oleh.html"><img src="images/Oleh.jpg" alt=""/></a></div>
+            </div>
+    </div>
+    <div class="rotate-block2">
+        <div class="change-img d2">
+          <div class="color"><a href="Danik.html"><img src="images/DanikB.jpg" alt=""/></a></div>
+          <div class="black"><a href="Danik.html"><img src="images/Danik2.jpg" alt=""/></a></div>
+        </div>
+    </div>
+        <div class="rotate-block3">
+            <div class="change-img d3">
+              <div class="color"><a href="Vital.html"><img src="images/VitalB.jpg" alt=""/></a></div>
+              <div class="black"><a href="Vital.html"><img src="images/Vital.jpg" alt=""/></a></div>
+            </div>
+      </div>
+      <div class="rotate-block4">
+        <div class="change-img d4">
+          <div class="color"><a href="Oksana.html"><img src="images/OksanaB.jpg" alt=""/></a></div>
+          <div class="black"><a href="Oksana.html"><img src="images/Oksana.jpg" alt=""/></a></div>
+        </div>
+  </div>
+  <div class="rotate-block5">
+    <div class="change-img d5">
+      <div class="color"><a href="Anna.html"><img src="images/AnnaB.jpg" alt=""/></a></div>
+      <div class="black"><a href="Anna.html"><img src="images/Anna.jpeg" alt=""/></a></div>
+    </div>
+</div>
+      <div class="audio">
+        <p>Нажми для атмосферы</p>
+        <audio controls preload="auto" loop>
+        <source src="sounds/OST2.mp3" type="audio/mp3">
+    </div>
+    <div class="head">
+        <h1><span id="word">Краткая</span> история одной <span id="word">очень</span> опасной и веселой банды<br><strong>ТОЛСТЫЙ, ЛЫСЫЙ и ВИТАЛИК</strong></h1>
+        <h2>и их незаменимых помошниц</h2>
+        <div class="buttom">
+            <a href="history.html">ТУТ</a>
+        </div>
+    </div>
+    <footer>
+        <p>Все кому надо знают как с нами связаться, остальным с нами лучше не связываться</p>
+        <p>&#169; Все права защищены. 2022</p>
+    </footer> 
+</div>
+
+</body>
+</html>

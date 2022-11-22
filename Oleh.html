@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Толстый, Лысый и Виталик</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Wet+Paint" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <style>
+html {background-image: url(background/897704.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+.Danik  {display: grid;
+        grid-template-rows:30px repeat(2, 333px 10px) auto auto;
+        grid-template-columns: 30px 700px 10px 250px 10px 250px 10px 250px 10px;
+}   
+.main {
+    grid-row: 2/7;
+    grid-column: 2/3;
+    background-image: url(background/paper2.jpg);
+    background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: justify;
+    font-family: "Lobster", Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding: 0 1em;
+    border-radius: 25px;
+ }
+.main h1 {
+    font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+    color:  #940505;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    margin-top: 0;
+}
+.main p {
+    font-size: larger;
+    font-weight: bold;
+}
+.st {
+    color: #940505;
+    font-style: italic;
+
+}
+.rotate-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Изображение */
+.change-img {
+  width: 250px;
+  height: 333px;
+  position: relative;
+  perspective: 1000px;
+  /*border: 2px solid #940505; /* Рамка */
+}
+.change-img:hover .color{
+  transform: rotateY(180deg);
+}
+.change-img:hover .black {
+  transform: rotateY(360deg);
+}
+/* Стороны изображения */
+.color, .black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  }
+.color img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.black img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);/* Отражаем изображение по горизонтали */
+}
+.black {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.rotate-block1 {
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+.rotate-block2 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.rotate-block3 {
+    grid-row: 2/3;
+    grid-column: 8/9;
+}
+.rotate-block4 {
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+.rotate-block5 {
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+.rotate-block6 {
+    grid-row: 4/5;
+    grid-column: 8/9;
+}
+footer {
+  grid-row: 7/8;
+  grid-column: 2/9; 
+  font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #940505;
+  text-size-adjust: small;
+  }
+  .buttom a {display: block;
+          border-style: solid;
+         border-radius: 25px;
+         border-color: #940505;
+         background-color: #940505;
+         color: azure; 
+         line-height: 1em;
+         text-decoration: none;
+         font-family: "Rubik Wet Paint", Georgia, 'Times New Roman', Times, serif;
+         width: 100px;
+        text-align: center;
+        font-size: large;}
+.buttom a:hover {background-color: azure; border-color: azure; color: #940505;}
+.buttom {grid-row: 1/2;
+         grid-column: 2/3;}
+
+  </style>
+  </head>
+<body>
+<div class="Danik">
+    <div class="main">
+      <h1>Адвокат<br> он же Нудный он же Толстый он же Самыйсукаумный</h1>
+      <p>Ну что я могу сказать про это человека. Это прекрасный, умный, красивый, веселый, замечательный, добрый, милый, очаровательный, скромный человек. В нашем мире нет ничего идеального, но если бы было, то скорее всего это был бы он.</p>
+      <p>Но именно этим он всех и бесит, всегда пытается избавить других от их заблуждений используя логику и научный метод познания и навязать им свои заблудения. Все время что-то читает, умничает. Хочется его треснуть. Очень фанатичен, часто впадет в крайности. Не пьет (о чем с ним еще говорить?). Не верит в Бога (ничего святого). Любит заниматься спортом, особенно поесть. Все время худеет и бросает курить. От природы очарователен, но очень не в меру зануден. Ходят слухи, что он настолько всех устал тем, что умничает, что ему сожгли машину (при этом даже пожарным он рассказывал, как надо правильно тушить его машину... ну вы поняли).</p>
+      <p>Характер вспыльчив. Чересчур самоуверен. Обладает подвешенным языком, может заболтать кого угодно. Хороший семьянин, но не подкаблучник (жена ему разрешила говорить всем, что он не подкаблучник).</p>
+      <p><span class="st">Сильные стороны:</span> Начитанный гад. Так просто его не провести. Неосторожно начав беседу, можно увязнуть в теоретизировании с его стороны. Знает немного, но о многом, а если не знает, то может на ходу придумать. </p>
+      <p><span class="st">Слабые стороны:</span> Хотите от него избавится, заинтересуйте его изучить что-нибудь и все, он пропал на пару недель… Или просто скажите ему, что он толстый.</p>
+    </div>
+         <div class="rotate-block1">
+            <div class="change-img">
+              <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+              <div class="black"><img src="images/Oleh/Oleh2.jpg" alt=""/></div>
+            </div>
+        </div>
+            <div class="rotate-block2">
+                <div class="change-img">
+                  <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+                  <div class="black"><img src="images/Oleh/Oleh1.jpg" alt=""/></div>
+                </div>
+            </div>
+        <div class="rotate-block3">
+            <div class="change-img">
+              <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+              <div class="black"><img src="images/Oleh/Oleh4.jpg" alt=""/></div>
+            </div>
+        </div>
+        <div class="rotate-block4">
+          <div class="change-img">
+            <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+            <div class="black"><img src="images/Oleh/Oleh5.jpg" alt=""/></div>
+          </div>
+      </div>
+      <div class="rotate-block5">
+        <div class="change-img">
+          <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+          <div class="black"><img src="images/Oleh/Oleh6.jpg" alt=""/></div>
+        </div>
+      </div>
+      <div class="rotate-block6">
+        <div class="change-img">
+          <div class="color"><img src="images/Danik/BS.jpg" alt=""/></div>
+          <div class="black"><img src="images/Oleh/Oleh8.jpg" alt=""/></div>
+        </div>
+      </div>
+      <footer>
+        <p>Все кому надо знают как с нами связаться, остальным с нами лучше не связываться</p>
+        <p>&#169; Все права защищены. 2022</p>
+      </footer> 
+      <div class="buttom">
+        <a href="index.html">НА ГЛАВНУЮ</a>
+    </div>
+  </div>
+</body>
+</html>
